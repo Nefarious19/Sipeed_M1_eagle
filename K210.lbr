@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.2.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="K210">
+<smd name="IO18" x="1.9" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO36" x="25.7554" y="1.9014" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="GND_3" x="1.91" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="DVP_D0" x="3.18" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="LCD_D0" x="13.34" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="RST" x="23.5" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO0" x="-0.3622" y="23.5398" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="NC3" x="0.12" y="25.21" dx="1" dy="1" layer="1" rot="R90"/>
+<smd name="IO1" x="-0.3622" y="22.2698" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO2" x="-0.3622" y="20.9998" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO3" x="-0.3622" y="19.7298" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO4" x="-0.3622" y="18.4598" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO5" x="-0.3622" y="17.1898" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO6" x="-0.3622" y="15.9198" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO7" x="-0.3622" y="14.6498" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO8" x="-0.3622" y="13.3798" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO9" x="-0.3622" y="12.1098" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO10" x="-0.3622" y="10.8398" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO11" x="-0.3622" y="9.5698" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO12" x="-0.3622" y="8.2998" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO13" x="-0.3622" y="7.0298" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO14" x="-0.3622" y="5.7598" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO15" x="-0.3622" y="4.4898" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO16" x="-0.3622" y="3.2198" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO17" x="-0.3622" y="1.9498" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO19" x="3.17" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO20" x="4.44" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO21" x="5.71" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO22" x="6.98" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO23" x="8.25" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO24" x="9.52" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO25" x="10.79" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO26" x="12.06" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO27" x="13.33" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO28" x="14.6" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO29" x="15.87" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO30" x="17.14" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO31" x="18.41" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO32" x="19.68" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO33" x="20.95" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO34" x="22.22" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO35" x="23.49" y="-0.4" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="IO37" x="25.7554" y="3.1714" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO38" x="25.7554" y="4.4414" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO39" x="25.7554" y="5.7114" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO40" x="25.7554" y="6.9814" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO41" x="25.7554" y="8.2514" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO42" x="25.7554" y="9.5214" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO43" x="25.7554" y="10.7914" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO44" x="25.7554" y="12.0614" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO45" x="25.7554" y="13.3314" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO46" x="25.7554" y="14.6014" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="IO47" x="25.7554" y="15.8714" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="GND_1" x="25.7554" y="17.1414" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="GND2" x="25.7554" y="18.4114" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="5V_1" x="25.7554" y="19.6814" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="5V_2" x="25.7554" y="20.9514" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="1.8V" x="25.7554" y="22.2214" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="3.3V" x="25.7554" y="23.4914" dx="2" dy="1" layer="1" rot="R180"/>
+<smd name="DVP_D1" x="4.45" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="DVP_D2" x="5.72" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="DVP_D3" x="6.99" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="DVP_D4" x="8.26" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="DVP_D5" x="9.53" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="DVP_D6" x="10.8" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="DVP_D7" x="12.07" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="LCD_D1" x="14.61" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="LCD_D2" x="15.88" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="LCD_D3" x="17.15" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="LCD_D4" x="18.42" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="LCD_D5" x="19.69" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="LCD_D6" x="20.96" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="LCD_D7" x="22.23" y="25.82" dx="2" dy="1" layer="1" rot="R90"/>
+<text x="1.48" y="1.56" size="2.54" layer="21" font="vector" ratio="14">SIPEED M1W
+
+KENDRYTE 
+K210
+INSIDE 
+</text>
+<text x="7.46" y="2.06" size="1.27" layer="21" font="vector" ratio="15">RISC-V 64BIT</text>
+<wire x1="0" y1="0" x2="1.1" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="1.1" width="0.127" layer="21"/>
+<wire x1="0" y1="24.3" x2="0" y2="24.4" width="0.127" layer="21"/>
+<wire x1="1" y1="25.4" x2="1.2" y2="25.4" width="0.127" layer="21"/>
+<wire x1="24.4" y1="25.4" x2="25.4" y2="25.4" width="0.127" layer="21"/>
+<wire x1="25.4" y1="25.4" x2="25.4" y2="24.4" width="0.127" layer="21"/>
+<wire x1="24.3" y1="0" x2="25.4" y2="0" width="0.127" layer="21"/>
+<wire x1="25.4" y1="0" x2="25.4" y2="1" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="0.6" y="24.3"/>
+<vertex x="0.6" y="24.4"/>
+<vertex x="1" y="24.4"/>
+<vertex x="1" y="24.7"/>
+<vertex x="1.1" y="24.7"/>
+<vertex x="1.1" y="24.3"/>
+</polygon>
+<text x="0" y="27.94" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="K210_1">
+<text x="8.636" y="14.732" size="1.4224" layer="95">JTAG_TCK</text>
+<text x="8.636" y="12.192" size="1.4224" layer="95">JTAG_TDI</text>
+<text x="8.636" y="9.652" size="1.4224" layer="95">JTAG_TMS</text>
+<text x="8.636" y="7.112" size="1.4224" layer="95">JTAG_TDO</text>
+<text x="8.636" y="4.572" size="1.4224" layer="95">ISP_RX</text>
+<text x="8.636" y="2.032" size="1.4224" layer="95">ISP_TX</text>
+<text x="0" y="18.542" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="17.78" x2="22.86" y2="17.78" width="0.254" layer="94"/>
+<wire x1="22.86" y1="17.78" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="IO0" x="-5.08" y="15.24" length="middle"/>
+<pin name="IO1" x="-5.08" y="12.7" length="middle"/>
+<pin name="IO2" x="-5.08" y="10.16" length="middle"/>
+<pin name="IO3" x="-5.08" y="7.62" length="middle"/>
+<pin name="IO4" x="-5.08" y="5.08" length="middle"/>
+<pin name="IO5" x="-5.08" y="2.54" length="middle"/>
+</symbol>
+<symbol name="K210_2">
+<text x="8.636" y="14.732" size="1.016" layer="95">WIFI_TX MCU_RX</text>
+<text x="8.636" y="12.192" size="1.016" layer="95">WIFI_RX MCU_TX</text>
+<pin name="IO6" x="-5.08" y="15.24" length="middle"/>
+<pin name="IO7" x="-5.08" y="12.7" length="middle"/>
+<pin name="IO8" x="-5.08" y="10.16" length="middle"/>
+<text x="8.636" y="9.652" size="1.016" layer="95">WIFI_EN</text>
+<pin name="IO9" x="-5.08" y="7.62" length="middle"/>
+<pin name="IO10" x="-5.08" y="5.08" length="middle"/>
+<pin name="IO11" x="-5.08" y="2.54" length="middle"/>
+<wire x1="0" y1="17.78" x2="22.86" y2="17.78" width="0.254" layer="94"/>
+<wire x1="22.86" y1="17.78" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
+<text x="0" y="18.542" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="K210_3">
+<pin name="IO12" x="-5.08" y="15.24" length="middle"/>
+<pin name="IO13" x="-5.08" y="12.7" length="middle"/>
+<pin name="IO14" x="-5.08" y="10.16" length="middle"/>
+<pin name="IO15" x="-5.08" y="7.62" length="middle"/>
+<pin name="IO16" x="-5.08" y="5.08" length="middle"/>
+<pin name="IO17" x="-5.08" y="2.54" length="middle"/>
+<wire x1="0" y1="17.78" x2="22.86" y2="17.78" width="0.254" layer="94"/>
+<wire x1="22.86" y1="17.78" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
+<text x="0" y="18.542" size="1.27" layer="95">&gt;NAME</text>
+<text x="8.636" y="4.826" size="1.4224" layer="95">BOOT
+</text>
+</symbol>
+<symbol name="K210_4">
+<text x="0" y="18.542" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="17.78" x2="22.86" y2="17.78" width="0.254" layer="94"/>
+<wire x1="22.86" y1="17.78" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="IO18" x="-5.08" y="15.24" length="middle"/>
+<pin name="IO19" x="-5.08" y="12.7" length="middle"/>
+<pin name="IO20" x="-5.08" y="10.16" length="middle"/>
+<pin name="IO21" x="-5.08" y="7.62" length="middle"/>
+<pin name="IO22" x="-5.08" y="5.08" length="middle"/>
+<pin name="IO23" x="-5.08" y="2.54" length="middle"/>
+</symbol>
+<symbol name="K210_5">
+<pin name="IO24" x="-5.08" y="15.24" length="middle"/>
+<pin name="IO25" x="-5.08" y="12.7" length="middle"/>
+<pin name="IO26" x="-5.08" y="10.16" length="middle"/>
+<pin name="IO27" x="-5.08" y="7.62" length="middle"/>
+<pin name="IO28" x="-5.08" y="5.08" length="middle"/>
+<pin name="IO29" x="-5.08" y="2.54" length="middle"/>
+<wire x1="0" y1="17.78" x2="22.86" y2="17.78" width="0.254" layer="94"/>
+<wire x1="22.86" y1="17.78" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
+<text x="0" y="18.542" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="K210_6">
+<pin name="IO30" x="-5.08" y="15.24" length="middle"/>
+<pin name="IO31" x="-5.08" y="12.7" length="middle"/>
+<pin name="IO32" x="-5.08" y="10.16" length="middle"/>
+<pin name="IO33" x="-5.08" y="7.62" length="middle"/>
+<pin name="IO34" x="-5.08" y="5.08" length="middle"/>
+<pin name="IO35" x="-5.08" y="2.54" length="middle"/>
+<wire x1="0" y1="17.78" x2="22.86" y2="17.78" width="0.254" layer="94"/>
+<wire x1="22.86" y1="17.78" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
+<text x="0" y="18.542" size="1.27" layer="95">&gt;NAME</text>
+<text x="8.636" y="4.826" size="1.4224" layer="95">BOOT
+</text>
+</symbol>
+<symbol name="K210_7">
+<pin name="IO36" x="-5.08" y="15.24" length="middle"/>
+<pin name="IO37" x="-5.08" y="12.7" length="middle"/>
+<pin name="IO38" x="-5.08" y="10.16" length="middle"/>
+<pin name="IO39" x="-5.08" y="7.62" length="middle"/>
+<pin name="IO40" x="-5.08" y="5.08" length="middle"/>
+<pin name="IO41" x="-5.08" y="2.54" length="middle"/>
+<wire x1="0" y1="17.78" x2="22.86" y2="17.78" width="0.254" layer="94"/>
+<wire x1="22.86" y1="17.78" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
+<text x="0" y="18.542" size="1.27" layer="95">&gt;NAME</text>
+<text x="8.636" y="14.732" size="1.4224" layer="95">LCD_RST0</text>
+<text x="8.636" y="12.192" size="1.4224" layer="95">LCD_CS0</text>
+<text x="8.636" y="9.652" size="1.4224" layer="95">LCD_WR0</text>
+<text x="8.636" y="7.112" size="1.4224" layer="95">LCD_DC0</text>
+<text x="8.636" y="4.572" size="1.4224" layer="95">DVP_RST0</text>
+<text x="8.636" y="2.032" size="1.4224" layer="95">DVP_PWDN0</text>
+<text x="22.86" y="19.558" size="1.27" layer="94" rot="R180">1.8V!</text>
+</symbol>
+<symbol name="K210_8">
+<pin name="IO42" x="-5.08" y="15.24" length="middle"/>
+<pin name="IO43" x="-5.08" y="12.7" length="middle"/>
+<pin name="IO44" x="-5.08" y="10.16" length="middle"/>
+<pin name="IO45" x="-5.08" y="7.62" length="middle"/>
+<pin name="IO46" x="-5.08" y="5.08" length="middle"/>
+<pin name="IO47" x="-5.08" y="2.54" length="middle"/>
+<wire x1="0" y1="17.78" x2="22.86" y2="17.78" width="0.254" layer="94"/>
+<wire x1="22.86" y1="17.78" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="17.78" width="0.254" layer="94"/>
+<text x="0" y="18.542" size="1.27" layer="95">&gt;NAME</text>
+<text x="8.636" y="14.732" size="1.4224" layer="95">DVP_XCLK0</text>
+<text x="8.636" y="12.192" size="1.4224" layer="95">DVP_PCLK0</text>
+<text x="8.636" y="9.652" size="1.4224" layer="95">DVP_HSYNC0</text>
+<text x="8.636" y="7.112" size="1.4224" layer="95">DVP_VSYNC0</text>
+<text x="8.636" y="4.572" size="1.4224" layer="95">DVP_SCL</text>
+<text x="8.636" y="2.032" size="1.4224" layer="95">DVP_SDA</text>
+<text x="22.86" y="19.558" size="1.27" layer="94" rot="R180">1.8V!</text>
+</symbol>
+<symbol name="K210_9">
+<pin name="GND1" x="-5.08" y="2.54" visible="off" length="middle" direction="pwr"/>
+<pin name="GND2" x="-5.08" y="5.08" visible="off" length="middle" direction="pwr"/>
+<pin name="5V_1" x="-5.08" y="27.94" visible="off" length="middle" direction="pwr"/>
+<pin name="5V_2" x="-5.08" y="25.4" visible="off" length="middle" direction="pwr"/>
+<pin name="3.3V" x="-5.08" y="22.86" visible="off" length="middle" direction="pwr"/>
+<pin name="1.8V" x="-5.08" y="20.32" visible="off" length="middle" direction="pwr"/>
+<wire x1="0" y1="30.48" x2="10.16" y2="30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="30.48" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="30.48" width="0.254" layer="94"/>
+<text x="0" y="31.242" size="1.27" layer="95">&gt;NAME</text>
+<pin name="GND3" x="-5.08" y="7.62" visible="off" length="middle" direction="pwr"/>
+<text x="2.54" y="2.032" size="1.4224" layer="95">GND</text>
+<text x="2.54" y="4.572" size="1.4224" layer="95">GND</text>
+<text x="2.54" y="6.858" size="1.4224" layer="95">GND</text>
+<text x="2.286" y="19.558" size="1.4224" layer="95">1.8V</text>
+<text x="2.54" y="22.352" size="1.4224" layer="95">3.3V</text>
+<text x="2.54" y="24.638" size="1.4224" layer="95">5V</text>
+<text x="2.54" y="27.178" size="1.4224" layer="95">5V</text>
+<pin name="RESET" x="-5.08" y="15.24" visible="pin" length="middle" direction="in" function="dot"/>
+</symbol>
+<symbol name="K210_10">
+<pin name="LCD_D0" x="-5.08" y="20.32" length="middle"/>
+<wire x1="0" y1="22.86" x2="15.24" y2="22.86" width="0.254" layer="94"/>
+<wire x1="15.24" y1="22.86" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="22.86" width="0.254" layer="94"/>
+<text x="0" y="23.622" size="1.27" layer="95">&gt;NAME</text>
+<pin name="LCD_D1" x="-5.08" y="17.78" length="middle"/>
+<pin name="LCD_D2" x="-5.08" y="15.24" length="middle"/>
+<pin name="LCD_D3" x="-5.08" y="12.7" length="middle"/>
+<pin name="LCD_D4" x="-5.08" y="10.16" length="middle"/>
+<pin name="LCD_D5" x="-5.08" y="7.62" length="middle"/>
+<pin name="LCD_D6" x="-5.08" y="5.08" length="middle"/>
+<pin name="LCD_D7" x="-5.08" y="2.54" length="middle"/>
+<text x="14.986" y="24.638" size="1.27" layer="94" rot="R180">1.8V!</text>
+</symbol>
+<symbol name="K210_11">
+<pin name="DVP_D0" x="-5.08" y="20.32" length="middle"/>
+<pin name="DVP_D1" x="-5.08" y="17.78" length="middle"/>
+<pin name="DVP_D2" x="-5.08" y="15.24" length="middle"/>
+<pin name="DVP_D3" x="-5.08" y="12.7" length="middle"/>
+<pin name="DVP_D4" x="-5.08" y="10.16" length="middle"/>
+<pin name="DVP_D5" x="-5.08" y="7.62" length="middle"/>
+<pin name="DVP_D6" x="-5.08" y="5.08" length="middle"/>
+<pin name="DVP_D7" x="-5.08" y="2.54" length="middle"/>
+<wire x1="0" y1="22.86" x2="15.24" y2="22.86" width="0.254" layer="94"/>
+<wire x1="15.24" y1="22.86" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="22.86" width="0.254" layer="94"/>
+<text x="15.24" y="24.638" size="1.27" layer="94" rot="R180">1.8V!</text>
+<text x="0" y="23.622" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SIPEED_M1" prefix="IC">
+<gates>
+<gate name="_1/11" symbol="K210_1" x="0" y="256.54"/>
+<gate name="_2/11" symbol="K210_2" x="0" y="233.68"/>
+<gate name="_3/11" symbol="K210_3" x="0" y="210.82"/>
+<gate name="_4/11" symbol="K210_4" x="0" y="187.96"/>
+<gate name="_5/11" symbol="K210_5" x="0" y="165.1"/>
+<gate name="_6/11" symbol="K210_6" x="0" y="142.24"/>
+<gate name="_7/11" symbol="K210_7" x="0" y="119.38"/>
+<gate name="_8/11" symbol="K210_8" x="0" y="96.52"/>
+<gate name="_9/11" symbol="K210_9" x="0" y="58.42"/>
+<gate name="_10/11" symbol="K210_10" x="0" y="27.94"/>
+<gate name="_11/11" symbol="K210_11" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="K210">
+<connects>
+<connect gate="_1/11" pin="IO0" pad="IO0"/>
+<connect gate="_1/11" pin="IO1" pad="IO1"/>
+<connect gate="_1/11" pin="IO2" pad="IO2"/>
+<connect gate="_1/11" pin="IO3" pad="IO3"/>
+<connect gate="_1/11" pin="IO4" pad="IO4"/>
+<connect gate="_1/11" pin="IO5" pad="IO5"/>
+<connect gate="_10/11" pin="LCD_D0" pad="LCD_D0"/>
+<connect gate="_10/11" pin="LCD_D1" pad="LCD_D1"/>
+<connect gate="_10/11" pin="LCD_D2" pad="LCD_D2"/>
+<connect gate="_10/11" pin="LCD_D3" pad="LCD_D3"/>
+<connect gate="_10/11" pin="LCD_D4" pad="LCD_D4"/>
+<connect gate="_10/11" pin="LCD_D5" pad="LCD_D5"/>
+<connect gate="_10/11" pin="LCD_D6" pad="LCD_D6"/>
+<connect gate="_10/11" pin="LCD_D7" pad="LCD_D7"/>
+<connect gate="_11/11" pin="DVP_D0" pad="DVP_D0"/>
+<connect gate="_11/11" pin="DVP_D1" pad="DVP_D1"/>
+<connect gate="_11/11" pin="DVP_D2" pad="DVP_D2"/>
+<connect gate="_11/11" pin="DVP_D3" pad="DVP_D3"/>
+<connect gate="_11/11" pin="DVP_D4" pad="DVP_D4"/>
+<connect gate="_11/11" pin="DVP_D5" pad="DVP_D5"/>
+<connect gate="_11/11" pin="DVP_D6" pad="DVP_D6"/>
+<connect gate="_11/11" pin="DVP_D7" pad="DVP_D7"/>
+<connect gate="_2/11" pin="IO10" pad="IO10"/>
+<connect gate="_2/11" pin="IO11" pad="IO11"/>
+<connect gate="_2/11" pin="IO6" pad="IO6"/>
+<connect gate="_2/11" pin="IO7" pad="IO7"/>
+<connect gate="_2/11" pin="IO8" pad="IO8"/>
+<connect gate="_2/11" pin="IO9" pad="IO9"/>
+<connect gate="_3/11" pin="IO12" pad="IO12"/>
+<connect gate="_3/11" pin="IO13" pad="IO13"/>
+<connect gate="_3/11" pin="IO14" pad="IO14"/>
+<connect gate="_3/11" pin="IO15" pad="IO15"/>
+<connect gate="_3/11" pin="IO16" pad="IO16"/>
+<connect gate="_3/11" pin="IO17" pad="IO17"/>
+<connect gate="_4/11" pin="IO18" pad="IO18"/>
+<connect gate="_4/11" pin="IO19" pad="IO19"/>
+<connect gate="_4/11" pin="IO20" pad="IO20"/>
+<connect gate="_4/11" pin="IO21" pad="IO21"/>
+<connect gate="_4/11" pin="IO22" pad="IO22"/>
+<connect gate="_4/11" pin="IO23" pad="IO23"/>
+<connect gate="_5/11" pin="IO24" pad="IO24"/>
+<connect gate="_5/11" pin="IO25" pad="IO25"/>
+<connect gate="_5/11" pin="IO26" pad="IO26"/>
+<connect gate="_5/11" pin="IO27" pad="IO27"/>
+<connect gate="_5/11" pin="IO28" pad="IO28"/>
+<connect gate="_5/11" pin="IO29" pad="IO29"/>
+<connect gate="_6/11" pin="IO30" pad="IO30"/>
+<connect gate="_6/11" pin="IO31" pad="IO31"/>
+<connect gate="_6/11" pin="IO32" pad="IO32"/>
+<connect gate="_6/11" pin="IO33" pad="IO33"/>
+<connect gate="_6/11" pin="IO34" pad="IO34"/>
+<connect gate="_6/11" pin="IO35" pad="IO35"/>
+<connect gate="_7/11" pin="IO36" pad="IO36"/>
+<connect gate="_7/11" pin="IO37" pad="IO37"/>
+<connect gate="_7/11" pin="IO38" pad="IO38"/>
+<connect gate="_7/11" pin="IO39" pad="IO39"/>
+<connect gate="_7/11" pin="IO40" pad="IO40"/>
+<connect gate="_7/11" pin="IO41" pad="IO41"/>
+<connect gate="_8/11" pin="IO42" pad="IO42"/>
+<connect gate="_8/11" pin="IO43" pad="IO43"/>
+<connect gate="_8/11" pin="IO44" pad="IO44"/>
+<connect gate="_8/11" pin="IO45" pad="IO45"/>
+<connect gate="_8/11" pin="IO46" pad="IO46"/>
+<connect gate="_8/11" pin="IO47" pad="IO47"/>
+<connect gate="_9/11" pin="1.8V" pad="1.8V"/>
+<connect gate="_9/11" pin="3.3V" pad="3.3V"/>
+<connect gate="_9/11" pin="5V_1" pad="5V_1"/>
+<connect gate="_9/11" pin="5V_2" pad="5V_2"/>
+<connect gate="_9/11" pin="GND1" pad="GND_1"/>
+<connect gate="_9/11" pin="GND2" pad="GND2"/>
+<connect gate="_9/11" pin="GND3" pad="GND_3"/>
+<connect gate="_9/11" pin="RESET" pad="RST"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
+</eagle>
